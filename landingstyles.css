@@ -203,7 +203,7 @@ body {
   font-size: 2.5rem;
   color: var(--secondary);
 }
-.bottom-left-icons{
+.bottom-right-icons{
   display: flex;
   gap: 0.50rem;
   justify-content: end;
@@ -213,7 +213,7 @@ body {
   text-decoration: underline;
 }
 
-.bottom-left-icons i{
+.bottom-right-icons i{
   color: var(--secondary);
   font-size: 1.7rem;
 }
@@ -292,6 +292,7 @@ body {
    padding: 2rem 2rem;
   }
   .text-area{
+    padding: 1rem 1rem;
     align-items: center;
     justify-content: center;
   }
@@ -300,7 +301,7 @@ body {
     margin-bottom: -40px;
   }
   .info-blocks{
-    gap: 1rem;
+    gap: 0.40rem;
     align-items: center;
     padding: 0.5rem 0.90rem;
     margin-bottom: -20px;
@@ -317,8 +318,101 @@ body {
   .sub-text{
     font-size: 0.80rem;
   }
+  .about-me-container{
+    padding: 0rem 3rem;
+  }
+  .top-left h2{
+    margin-top: -30px;
+    font-size: 2.5rem;
+  }
+  .bottom-left-icons i{
+    font-size: 1.3rem;
+  }
+  .socials-icon{
+    width: 40px;
+    height: 40px;
+  }
+  .cta-cv button{
+    padding: 0.40rem 1rem;
+    font-size: 0.90rem;
+    width: 100%;
+  }
+  .right-side p{
+    font-size: 0.90rem;
+    line-height: 1.5;
+  }
 }
 
-@media (max-width: 907px) {
-  
+@media (max-width: 768px) {
+  .hero-container{
+    justify-content: center;
+    padding: 4rem 4rem;
+  }
+  .text-area{
+    padding: 1rem 1rem;
+    margin-top: 700px;
+    gap: 3rem;
+  }
+  .text-area h1{
+    font-size: 3rem;
+  }
+  .text-area-h1::after{
+    font-size: 1rem;
+    margin-left: 6px;
+  }
+  .info{
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .info-blocks{
+    padding: 0.50rem 0.50rem;
+    justify-content: center;
+    display: flex;
+    gap: 0.90;
+  }
+  .top-text{
+    font-size: 1rem;
+    justify-content: center;
+  }
+  .subtext{
+    font-size: 0.80rem;
+    margin-top: -10px;
+  }
+  .footer-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.50rem;
+    justify-content: center;
+    margin-top: -25px;
+  }
+
+  .footer-buttons a {
+    flex: 1 1 calc(50% - 1rem);
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+  }
+  .footer-buttons button {
+    width: 100%;
+    font-size: 0.80rem;
+  }
+  .about-me-container{
+    padding: 13rem 5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .left-side{
+    align-items: center;
+    justify-content: center;
+  }
+  .top-left h2{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .bottom-right-icons{
+    margin-top: -10px;
+  }
+}
+@media (max-width: 682px) {
+
 }
