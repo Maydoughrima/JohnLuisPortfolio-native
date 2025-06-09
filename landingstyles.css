@@ -312,17 +312,25 @@ body {
   display: flex;
   justify-content: center;
 }
-.cards-container{
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch; /* ensures children stretch equally */
+  gap: 2rem;
   padding-top: 2rem;
 }
+
+/* Default: 5 cards per row */
 .works-cards {
+  flex: 1 1 calc(20% - 2rem); /* 100% / 5 = 20% */
+  max-width: 300px;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  max-width: 300px;
+  justify-content: space-between;
   background: linear-gradient(to bottom, var(--complimentary), #262224);
   overflow: hidden;
-  border: 1px solid; /* border width */
+  border: 1px solid;
   border-image: linear-gradient(135deg, var(--neutral), #ba181b) 1;
 }
 .card-img img{
@@ -440,6 +448,12 @@ body {
   .about-me-container{
     margin-top: -10px;
   }
+  .works-container{
+    padding: 2rem 3rem;
+  }
+  .works-cards {
+    flex: 1 1 calc(50% - 2rem);
+  }
 }
 
 @media (max-width: 768px) {
@@ -496,7 +510,7 @@ body {
     font-size: 0.80rem;
   }
   .about-me-container{
-    padding: 13rem 5rem;
+    padding: 15rem 5rem 0rem;
     display: flex;
     flex-direction: column;
   }
@@ -518,6 +532,12 @@ body {
   .cta-bar h3{
     font-size: 1rem;
   }
+  .works-cards {
+  flex: 1 1 calc(50% - 2rem);
+  }
+  .works-container{
+  padding: 2rem 5rem;
+  }
 }
 
 
@@ -538,11 +558,20 @@ body {
     font-size: 0.80rem;
   }
   .about-me-container{
-    padding: 14rem 5rem;
+    padding: 15rem 5rem 0rem;
+  }
+  .works-cards {
+  flex: 1 1 calc(50% - 2rem);
+  }
+  .works-container{
+    padding: 2rem 5rem;
+  }
+  .cards-container{
+    gap: 1rem;
   }
 }
 
-@media (max-width: 444px){
+@media (max-width: 445px){
   .hero-container{
     padding: 4rem 1rem;
   }
@@ -575,7 +604,7 @@ body {
     font-size: 1rem;
   }
   .about-me-container{
-    padding: 6rem 2rem;
+    padding: 8rem 2rem 0rem;
   }
   .top-left h2{
     font-size: 1.3rem ;
@@ -602,12 +631,30 @@ body {
     padding: 0.40rem 0.80rem;
     font-size: 0.60rem;
   }
+  .works-cards{
+    flex: 1 1 100%;
+  }
+  .works-container{
+    padding: 2rem 2rem;
+  }
+    .works-header h2{
+    font-size: 1.3rem;
+  }
+  .cards-container{
+    padding-top: 1rem;
+  }
 }
 @media (max-width: 362px){
   .hero-container{
     padding: 2rem 0rem;
   }
   .about-me-container{
-    padding: 7rem 1rem;
+    padding: 7rem 1rem 0rem;
+  }
+    .works-cards{
+    flex: 1 1 100%;
+  }
+  .works-container{
+    padding: 1rem 2rem;
   }
 }
