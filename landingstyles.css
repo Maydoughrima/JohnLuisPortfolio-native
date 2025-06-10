@@ -378,22 +378,60 @@ body {
   text-align: center;
 }
 /*Skills-section*/
-.skills-container{
+.skills-container {
   padding: 4rem 5rem;
   display: flex;
   flex-direction: column;
 }
-.skills-header h2{
+
+.skills-header h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
+  color: var(--secondary);
+}
+.skills-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2rem;
+  gap: 40px;
 }
 
+.skills-column {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 
+.skill {
+  display: flex;
+  flex-direction: column;
+}
 
+.skill-label {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
 
+.progress-bar {
+  height: 10px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+}
 
-
-
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, #ff4e50, #d47433);
+  border-radius: 10px;
+  width: 0;
+  transition: width 1.5s ease-in-out;
+}
 @media (max-width: 1168px){
   .hero-container{
    justify-content: center;
@@ -549,6 +587,17 @@ body {
   }
   .works-container{
   padding: 2rem 5rem;
+  }
+  .skills-section {
+  flex-direction: column;
+  gap: 20px;
+  }
+  .skills-container{
+    padding: 2rem 5rem;
+  }
+
+  .skills-column {
+    flex: 1 1 100%;
   }
 }
 
