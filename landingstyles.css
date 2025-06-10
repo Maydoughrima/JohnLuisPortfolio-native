@@ -1,4 +1,4 @@
-    :root {
+:root {
       --primary: #0b090a;
       --secondary: #fdfffc;
       --complimentary: #ba181b;
@@ -377,6 +377,18 @@ body {
   text-decoration: none;
   text-align: center;
 }
+/*Skills-section*/
+.skills-container{
+  padding: 4rem 5rem;
+  display: flex;
+  flex-direction: column;
+}
+.skills-header h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+}
+
+
 
 
 
@@ -561,13 +573,26 @@ body {
     padding: 15rem 5rem 0rem;
   }
   .works-cards {
-  flex: 1 1 calc(50% - 2rem);
+  flex: 0 1 calc(50% - 2rem);
   }
   .works-container{
     padding: 2rem 5rem;
   }
   .cards-container{
     gap: 1rem;
+  }
+  .project-details{
+    font-size: 0.80rem;
+  }
+  .cards-cta a div{
+    padding: 0.50rem;
+    font-size: 0.80rem;
+  }
+}
+
+@media (max-width: 570px) {
+  .works-cards {
+    flex: 0 1 100%; /* 1 per row */
   }
 }
 
