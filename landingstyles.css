@@ -432,6 +432,92 @@ body {
   width: 0;
   transition: width 1.5s ease-in-out;
 }
+/*Services*/
+.services-container{
+  padding: 4rem 5rem;
+  display: flex;
+  flex-direction: column;
+}
+.services-header{
+  display: flex;
+  justify-content: center;
+}
+.services-header h2{
+  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--secondary);
+}
+.card-container{
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.cards{
+  flex: 1 1 calc(25% - 2rem);
+  background-color: var(--neutral);
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+.cards::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+  padding: 1px; /* border thickness */
+  background: linear-gradient(135deg, var(--complimentary), #944d4f); /* gradient colors */
+  -webkit-mask:
+  linear-gradient(#fff 0 0) content-box,
+  linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+}
+.cards:hover{
+  background-color:rgb(68, 4, 5);
+}
+.card-icon{
+  font-size: 2rem;
+  align-self: center;
+  color: var(--secondary);
+}
+.service-name{
+  padding: 1rem 0rem;
+  align-self: center;
+}
+.service-name h3{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+}
+.service-description{
+  padding: 1rem 0rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  text-align: start;
+}
+.services-cta-hmn{
+  padding-top: 0.50rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.services-cta-hmn a{
+  color: var(--secondary);
+  text-decoration: none;
+}
+.services-cta-hmn a div{
+  background-color: var(--complimentary);
+  padding: 1rem 5rem;
+  border-radius: 3px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+}
+
 @media (max-width: 1168px){
   .hero-container{
    justify-content: center;
