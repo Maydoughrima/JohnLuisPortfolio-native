@@ -20,9 +20,20 @@
       <button class="hmb-btn"><i class="fa-solid fa-bars"></i></button>
     </div>
   </nav>
+  <div class="fullscreen-menu hidden" id="fullscreenMenu">
+  <button class="close-btn" id="closeMenuBtn">&times;</button>
+  <ul class="menu-items">
+    <li><a href="#about">About</a></li>
+    <li><a href="#works">Works</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  </div>
 
   <main class="container">
-    <section class="hero-container">
+    <section class="hero-section animate-on-scroll">
+      <div class="hero-container">
       <div class="hero-img">
         <img src="images/HERO.png" alt="John Luis">
       </div>
@@ -50,9 +61,10 @@
           <a href=""><button>BRANDING</button></a>
         </div>
       </div>
+      </div>
     </section>
   </main>
-        <section class="about-me">
+        <section id="about" class="about-me animate-on-scroll">
           <div class="about-me-container">
              <div class="left-side">
                 <div class="top-left"><h2>Designing with <span>Purpose</span>, Driven by <span>Creativity</span></h2>
@@ -75,7 +87,7 @@
               </div>
             </div>
         </section>
-          <section class="Works">
+          <section id="works" class="Works animate-on-scroll">
               <div class="works-container">
                   <div class="works-header">
                     <h2>Works</h2>
@@ -134,7 +146,7 @@
                   </div>
               </div>
           </section>
-         <section class="Skills-Section"> 
+         <section id="skills" class="Skills-Section animate-on-scroll"> 
   <div class="skills-container">
     <div class="skills-header">
       <h2>Skills</h2>
@@ -194,7 +206,7 @@
     </div>
   </div>
 </section>
-      <section class="Services-section">
+      <section id="services" class="Services-section animate-on-scroll">
         <div class="services-container">
           <div class="services-header">
             <h2>My Services</h2>
@@ -226,6 +238,40 @@
           </div>
         </div>
       </section>
+      <section id="contact" class="Contact-me-section animate-on-scroll">
+        <div class="contact-me-container">
+          <div class="cm-header">
+            <h2>Get In Touch <span>With Me</span></h2>
+            <div class="subtext">
+              <p>Let’s bring your ideas to life — together we can turn vision into reality.</p>
+            </div>
+          </div>
+          <div class="content">
+            <div class="cm-content">
+            <div class="cm-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="cm-details">johnluismercado863@gmail.com</div>
+          </div>
+          <div class="cm-content">
+            <div class="cm-icon"><i class="fa-solid fa-phone"></i></i></div>
+            <div class="cm-details">+639 4874 68794</div>
+          </div>
+          <div class="cm-content">
+            <div class="cm-icon"><i class="fa-brands fa-facebook"></i></i></div>
+            <div class="cm-details">https://www.facebook.com/john.mercado.9849</div>
+          </div>
+          </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer-section">
+        <div class="footer-container">
+          <div class="footer-content">
+            <div class="foot-icon"><i class="fa-solid fa-copyright"></i></div>
+            <div class="details">2025 • All Rights Reserved • John Luis </div>
+          </div>
+        </div>
+      </section>
+</div>
   <script src="jvs.js"></script>
   </body>
 </html>
