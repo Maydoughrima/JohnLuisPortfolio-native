@@ -452,13 +452,16 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
 }
 .cards{
   flex: 1 1 calc(25% - 2rem);
   background-color: var(--neutral);
-  padding: 2rem 3rem;
+  padding: 2rem 2rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   border-radius: 8px;
   transition: background 0.3s ease;
   position: relative;
@@ -590,6 +593,9 @@ body {
   .works-cards {
     flex: 1 1 calc(50% - 2rem);
   }
+  .cards {
+    flex: 1 1 calc(50% - 2rem);
+  }
 }
 
 @media (max-width: 768px) {
@@ -681,10 +687,16 @@ body {
   .skills-container{
     padding: 2rem 5rem;
   }
-
   .skills-column {
     flex: 1 1 100%;
   }
+  .services-cta-hmn a div{
+  background-color: var(--complimentary);
+  padding: 0.80rem 3rem;
+  border-radius: 3px;
+  font-family: 'Roboto', sans-serif;
+  font-size: .80rem;
+}
 }
 
 
@@ -722,6 +734,9 @@ body {
   .cards-cta a div{
     padding: 0.50rem;
     font-size: 0.80rem;
+  }
+  .cards {
+    flex: 1 1 100%;
   }
 }
 
@@ -802,6 +817,38 @@ body {
   }
   .cards-container{
     padding-top: 1rem;
+  }
+  .skills-container{
+    padding: 2rem 2rem;
+  }
+  .services-container{
+    padding: 2rem 2rem;
+  }
+  .services-cta-hmn{
+    padding-top: 0;
+  }
+  .card-container{
+    gap: 1rem;
+    margin-top: 20px;
+  }
+  .skills-header h2{
+    font-size: 1.3rem
+  }
+  .skill-label{
+    font-size: 0.80rem;
+    font-weight: 300;
+  }
+  .services-header h2{
+    font-size: 1.3rem;
+  }
+  .card-icon{
+    font-size: 1.8rem;
+  }
+  .service-name h3{
+    font-size: 1rem;
+  }
+  .service-description{
+    font-size: 0.80rem;
   }
 }
 @media (max-width: 362px){
