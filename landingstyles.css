@@ -28,6 +28,8 @@ body {
   justify-content: space-between;
   align-items: center;
   z-index: 5;
+  position: sticky;
+  background-color: var(--primary);
 }
 
 .logo-group {
@@ -1059,9 +1061,12 @@ body {
   }
   .menu-items li {
   list-style: none;
-  margin: 40px 0;
-  font-size: 3rem;
+  margin: 15px 0;
+  font-size: 2rem;
 }
+  .menu-items{
+    padding: 2rem .90rem;
+  }
 
 }
 @media (max-width: 362px){
@@ -1079,8 +1084,11 @@ body {
   }
   .menu-items li{
     list-style: none;
-    margin: 40px 0;
+    margin: 15px 0;
     font-size: 2rem;
+  }
+  .menu-items{
+    padding: 2rem .90rem;
   }
 }
 @keyframes fadeInUp {
