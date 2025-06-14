@@ -636,8 +636,8 @@ body {
 
 .menu-items li {
   list-style: none;
-  margin: 20px 0;
-  font-size: 7rem;
+  margin: 15px 0;
+  font-size: 5rem;
 }
 
 .menu-items a {
@@ -900,6 +900,11 @@ body {
   .cards {
     flex: 1 1 100%;
   }
+  .menu-items li {
+  list-style: none;
+  margin: 20px 0;
+  font-size: 3rem;
+}
 }
 
 @media (max-width: 570px) {
@@ -927,7 +932,7 @@ body {
   .menu-items li {
   list-style: none;
   margin: 40px 0;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 .fullscreen-menu{
   padding: 7rem 2rem;
